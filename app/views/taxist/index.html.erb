@@ -1,0 +1,11 @@
+Список заказов
+<% @zakazs.each do |zakaz| %>
+  <div>
+    <%= zakaz.useradress %> <br>
+    <%= link_to  '10 min', :action=>:vote, :id=>zakaz.id, :time=>'10'%>
+    <%= link_to  '20 min', :action=>:vote, :id=>zakaz.id, :time=>'20'%>
+    <%= link_to  '30 min', :action=>:vote, :id=>zakaz.id, :time=>'30'%>
+    <%= link_to  '1 hour', :action=>:vote, :id=>zakaz.id, :time=>'60'%>
+  </div>
+
+<% end %>

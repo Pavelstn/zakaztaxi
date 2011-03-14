@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  disp_id: 1
+  phone: MyString
+  useradress: MyString
+  createdate: 2010-11-18 15:14:09
+  maxtime: 1
+  status: 1
+  taxist_id: 1
+
+two:
+  disp_id: 1
+  phone: MyString
+  useradress: MyString
+  createdate: 2010-11-18 15:14:09
+  maxtime: 1
+  status: 1
+  taxist_id: 1

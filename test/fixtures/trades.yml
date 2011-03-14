@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  zakaz_id: 1
+  taxist_id: 1
+  time: 1
+  status: 1
+
+two:
+  zakaz_id: 1
+  taxist_id: 1
+  time: 1
+  status: 1

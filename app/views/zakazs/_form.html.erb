@@ -1,0 +1,45 @@
+<%= form_for(@zakaz) do |f| %>
+  <% if @zakaz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zakaz.errors.count, "error") %> prohibited this zakaz from being saved:</h2>
+
+      <ul>
+      <% @zakaz.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :disp_id %><br />
+    <%= f.text_field :disp_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :useradress %><br />
+    <%= f.text_field :useradress %>
+  </div>
+  <div class="field">
+    <%= f.label :createdate %><br />
+    <%= f.datetime_select :createdate %>
+  </div>
+  <div class="field">
+    <%= f.label :maxtime %><br />
+    <%= f.text_field :maxtime %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :taxist_id %><br />
+    <%= f.text_field :taxist_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

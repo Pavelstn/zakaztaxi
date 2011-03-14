@@ -1,0 +1,35 @@
+<h1>Listing zakazs</h1>
+user <%=session[:user_id]%>
+<table>
+  <tr>
+    <th>Disp</th>
+    <th>Phone</th>
+    <th>Useradress</th>
+    <th>Createdate</th>
+    <th>Maxtime</th>
+    <th>Status</th>
+    <th>Taxist</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zakazs.each do |zakaz| %>
+  <tr>
+    <td><%= zakaz.disp_id %></td>
+    <td><%= zakaz.phone %></td>
+    <td><%= zakaz.useradress %></td>
+    <td><%= zakaz.createdate %></td>
+    <td><%= zakaz.maxtime %></td>
+    <td><%= zakaz.status %></td>
+    <td><%= zakaz.taxist_id %></td>
+    <td><%= link_to 'Show', :controller=>:zakazs, :method => :edit%></td>
+    <td></td>
+    <td><%= link_to 'Destroy', :confirm => 'Are you sure?',:controller=>:zakazs, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Zakaz', :controller=>:zakazs, :action => :new%>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+<%=zakazs_path %>
+<p>
+  <b>Disp:</b>
+  <%= @zakaz.disp_id %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @zakaz.phone %>
+</p>
+
+<p>
+  <b>Useradress:</b>
+  <%= @zakaz.useradress %>
+</p>
+
+<p>
+  <b>Createdate:</b>
+  <%= @zakaz.createdate %>
+</p>
+
+<p>
+  <b>Maxtime:</b>
+  <%= @zakaz.maxtime %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @zakaz.status %>
+</p>
+
+<p>
+  <b>Taxist:</b>
+  <%= @zakaz.taxist_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_zakaz_path(@zakaz) %> |
+<%= link_to 'Back', zakazs_path %>
